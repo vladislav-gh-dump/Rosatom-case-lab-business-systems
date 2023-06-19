@@ -1,0 +1,261 @@
+/* For All Objects*/
+* {
+    font-family: 'Verdana';
+}
+
+
+
+/* QFrame */
+
+QFrame {
+    border-radius: 10px;
+}
+
+/* фреймы для входных данных */
+QFrame MoneyLayout1, MoneyLayout2,
+DateLayout1, DateLayout2, DateLayout3,
+PercentagesLayout1, PercentagesLayout2  {
+    border: 1px solid grey;
+    background-color: white;
+}
+
+/* фреймы для выходных данных */
+QFrame ResultLayout1, ResultLayout2 {
+    border: 2px solid #323232;
+    background-color: white;
+}
+
+
+
+/* QLineEdits */
+
+QLineEdit {
+    font-size: 16px;
+    font-weight: bold;
+
+    padding: 4px;
+
+    color: #323232;
+    border-color: grey;
+    border-width: 1px;
+
+    border-top-style: none;
+    border-bottom-style: solid;
+    border-right-style: none;
+    border-left-style: none;
+}
+
+QLineEdit#OutputResult, QLineEdit#OutputResult1, QLineEdit#OutputResult2{
+    border-radius: 0px;
+    border-width: 1px;
+
+    border-top-style: none;
+    border-bottom-style: solid;
+    border-right-style: none;
+    border-left-style: none;
+}
+
+
+QLineEdit#InputMoney, QLineEdit#InputMoney1, QLineEdit#InputMoney2{
+    image: url(Styles/Icons/icon_ruble.svg);
+    image-position: right;
+}
+
+QLineEdit#InputPers, QLineEdit#InputPers1, QLineEdit#InputPers2{
+    image: url(Styles/Icons/icon_percent.svg);
+    image-position: right;
+}
+
+QLineEdit:focus{
+    border: 2px solid #77acf1;
+    border-radius: 10px;
+}
+
+QLineEdit#OutputResult:focus, QLineEdit#OutputResult1:focus, QLineEdit#OutputResult2:focus {
+    border-width: 2px;
+}
+
+
+
+/* QDateEdit */
+
+QDateEdit {
+    font-size: 12px;
+    font-weight: bold;
+
+    padding-right: 20px;
+    padding-left: 4px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+
+    color: #323232;
+    border-color: grey;
+    border-width: 1px;
+    border-top-style: none;
+    border-bottom-style: solid;
+    border-right-style: none;
+    border-left-style: none;
+}
+
+QDateEdit:focus {
+    border:2px solid #77acf1;
+    border-radius: 10px;
+}
+
+QDateEdit::drop-down {
+    image: url(Styles/Icons/icon_date_edit_button.svg);
+    width: 20px;
+    height: 20px;
+    margin-left: 4px;
+}
+
+
+
+/* Calendar */
+
+#qt_calendar_prevmonth {
+    icon-size: 24px;
+    qproperty-icon: url(Styles/Icons/icon_calendar_arrow_left_v1.svg);
+}
+
+#qt_calendar_nextmonth {
+    icon-size: 24px;
+    qproperty-icon: url(Styles/Icons/icon_calendar_arrow_right_v1.svg);
+}
+
+
+
+
+/* QButton */
+
+QPushButton {
+    border: 2px solid #77acf1;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+QPushButton#ButtonReport, QPushButton#ButtonReport2 {
+    font-size: 22px;
+    image: url(Styles/Icons/icon_report_excel_file.svg);
+    image-position: right;
+
+    color: #77acf1;
+    background-color: white;
+    border-color: #77acf1;
+}
+
+QPushButton#ButtonReport:hover, QPushButton#ButtonReport2:hover {
+    image: url(Styles/Icons/icon_report_excel_file_white.svg);
+    image-position: right;
+
+    color: white;
+    background-color: #77acf1;
+    border-color: white;
+}
+
+QPushButton#ButtonReport:open, QPushButton#ButtonReport2:open{
+    image: url(Styles/Icons/icon_report_excel_file.svg);
+    image-position: right;
+
+    color: #77acf1;
+    background-color: white;
+    border-color: #77acf1;
+}
+
+QPushButton#ButtonResult, QPushButton#ButtonResult2 {
+    font-size: 14px;
+    image: url(Styles/Icons/icon_calc_white.svg);
+    image-position: right;
+
+    color: white;
+    background-color: #77acf1;
+    border-color: white;
+}
+
+QPushButton#ButtonResult:hover, QPushButton#ButtonResult2:hover {
+    image: url(Styles/Icons/icon_calc.svg);
+    image-position: right;
+
+    color: #77acf1;
+    background-color: white;
+    border-color: #77acf1;
+}
+
+QPushButton#ButtonResult:open, QPushButton#ButtonResult2:open {
+    image: url(Styles/Icons/icon_calc_white.svg);
+    image-position: right;
+
+    color: white;
+    background-color: #77acf1;
+    border-color: white;
+}
+
+
+
+
+/* QLabel */
+
+QLabel {
+    font-size: 10px;
+    color: grey;
+}
+
+QLabel#LabelTab1, QLabel#LabelTab2, QLabel#LabelTab3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #323232;
+}
+
+
+/* TabWWidgets */
+
+QTabWidget::pane {
+    border: 2px solid #323232;
+    border-radius: 10px;
+    margin: 24px;
+    top: -40px;
+    background-color: white;
+}
+
+QTabWidget::tab-bar {
+    alignment: center;
+}
+
+
+
+/* TabBar */
+
+QTabBar::tab {
+    font-weight: bold;
+    color: #77acf1;
+
+    border: 2px solid #77acf1;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    margin-top: 32px;
+    width: 80px;
+    height: 16px;
+    padding: 4px;
+    background-color: white;
+}
+
+QTabBar::tab:selected, QTabBar::tab:hover {
+    margin-top: 28px;
+    color: white;
+    background-color: #77acf1;
+}
+
+QTabBar::tab:selected {
+    border-color: #77acf1;
+}
+
+
+
+/* QMainWindow */
+
+QMainWindow {
+    background-color: #323232;
+}
