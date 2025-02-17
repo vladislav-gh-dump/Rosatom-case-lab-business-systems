@@ -2,9 +2,9 @@ from diadoc_api import DiadocApi
 
 def main():
     url = 'https://diadoc-api-test.kontur.ru'
-    key = 'RATest-5347d365-7f18-4126-b5b6-e76ab0073563'
-    user_login = 'vvpikalov@rosatom.ru'
-    user_password = '1q2w3e$R%T^Y'
+    key = '***'
+    user_login = '***'
+    user_password = '***'
 
     # получение токена
     dapi = DiadocApi(url=url, key=key, user_login=user_login, user_password=user_password)
