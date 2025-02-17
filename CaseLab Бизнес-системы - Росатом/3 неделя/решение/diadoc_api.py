@@ -331,20 +331,3 @@ class DiadocApi:
         print("[WARNING] DATA ORGS EMPLOYEES DO NOT EXIST")
 
 
-# if __name__ == '__main__':
-#
-#     url = 'https://diadoc-api-test.kontur.ru'
-#     key = '***'
-#     user_login = '***'
-#     user_password = '***'
-#
-#     dapi = DiadocApi(url=url, key=key, user_login=user_login, user_password=user_password)
-#     dapi.get_token()
-#     dapi.get_data_orgs()
-#     dapi.save_data_orgs_json(file_name='Организации')
-#     dapi.get_data_orgs_boxes()
-#     dapi.save_data_orgs_boxes_json(file_name='Ящики')
-#     dapi.get_data_orgs_employees(list_orgs_indexes=[1,2])
-#     dapi.save_data_orgs_employees_json(file_name='Сотрудники(1,2)')
-#     dapi.save_data_orgs_boxes_excel(file_name='Ящики')
-#     dapi.save_data_orgs_employees_excel(file_name='Сотрудники(1,2)')
